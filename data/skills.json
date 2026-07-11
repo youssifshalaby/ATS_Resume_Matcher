@@ -1,0 +1,326 @@
+{
+  "Python": ["python"],
+  "C++": ["c++", "cpp"],
+  "Java": ["java"],
+  "JavaScript": ["javascript", "js"],
+  "TypeScript": ["typescript", "ts"],
+  "SQL": ["sql"],
+  "NoSQL": ["nosql"],
+
+  "Pandas": ["pandas"],
+  "NumPy": ["numpy"],
+  "Matplotlib": ["matplotlib"],
+  "Seaborn": ["seaborn"],
+  "Plotly": ["plotly"],
+
+  "Scikit-learn": [
+    "scikit-learn",
+    "scikit learn",
+    "sklearn"
+  ],
+
+  "TensorFlow": ["tensorflow", "tf"],
+  "Keras": ["keras"],
+  "PyTorch": ["pytorch", "torch"],
+
+  "XGBoost": ["xgboost"],
+  "LightGBM": ["lightgbm"],
+  "CatBoost": ["catboost"],
+
+  "Machine Learning": [
+    "machine learning",
+    "ml"
+  ],
+
+  "Deep Learning": [
+    "deep learning",
+    "dl"
+  ],
+
+  "Artificial Intelligence": [
+    "artificial intelligence",
+    "ai"
+  ],
+
+  "Computer Vision": [
+    "computer vision",
+    "cv"
+  ],
+
+  "Natural Language Processing": [
+    "natural language processing",
+    "nlp"
+  ],
+
+  "Generative AI": [
+    "generative ai",
+    "gen ai",
+    "genai"
+  ],
+
+  "Large Language Models": [
+    "large language model",
+    "large language models",
+    "llm",
+    "llms"
+  ],
+
+  "Prompt Engineering": [
+    "prompt engineering",
+    "prompt design"
+  ],
+
+  "RAG": [
+    "rag",
+    "retrieval augmented generation",
+    "retrieval-augmented generation"
+  ],
+
+  "LangChain": ["langchain"],
+
+  "LlamaIndex": [
+    "llamaindex",
+    "gpt index",
+    "gpt-index"
+  ],
+
+  "Hugging Face": [
+    "hugging face",
+    "huggingface"
+  ],
+
+  "Transformers": [
+    "transformers",
+    "transformer"
+  ],
+
+  "Sentence Transformers": [
+    "sentence transformers",
+    "sentence-transformers"
+  ],
+
+  "spaCy": [
+    "spacy"
+  ],
+
+  "NLTK": [
+    "nltk"
+  ],
+
+  "Gensim": [
+    "gensim"
+  ],
+
+  "Word2Vec": [
+    "word2vec"
+  ],
+
+  "FastText": [
+    "fasttext"
+  ],
+
+  "TF-IDF": [
+    "tf-idf",
+    "tfidf"
+  ],
+
+  "BERT": [
+    "bert"
+  ],
+
+  "GPT": [
+    "gpt",
+    "chatgpt"
+  ],
+
+  "FAISS": [
+    "faiss"
+  ],
+
+  "ChromaDB": [
+    "chromadb",
+    "chroma db"
+  ],
+
+  "Pinecone": [
+    "pinecone"
+  ],
+
+  "Milvus": [
+    "milvus"
+  ],
+
+  "Weaviate": [
+    "weaviate"
+  ],
+
+  "Vector Database": [
+    "vector database",
+    "vector db",
+    "vector store"
+  ],
+
+  "OpenAI API": [
+    "openai api",
+    "gpt api"
+  ],
+
+  "Azure OpenAI": [
+    "azure openai",
+    "azure openai service"
+  ],
+
+  "Amazon Bedrock": [
+    "amazon bedrock",
+    "aws bedrock"
+  ],
+
+  "Docker": [
+    "docker"
+  ],
+
+  "Kubernetes": [
+    "kubernetes",
+    "k8s"
+  ],
+
+  "Git": [
+    "git"
+  ],
+
+  "GitHub": [
+    "github"
+  ],
+
+  "Linux": [
+    "linux"
+  ],
+
+  "Bash": [
+    "bash",
+    "shell scripting"
+  ],
+
+  "FastAPI": [
+    "fastapi"
+  ],
+
+  "Flask": [
+    "flask"
+  ],
+
+  "Streamlit": [
+    "streamlit"
+  ],
+
+  "REST API": [
+    "rest api",
+    "restful api"
+  ],
+
+  "MongoDB": [
+    "mongodb",
+    "mongo"
+  ],
+
+  "PostgreSQL": [
+    "postgresql",
+    "postgres"
+  ],
+
+  "MySQL": [
+    "mysql"
+  ],
+
+  "SQLite": [
+    "sqlite"
+  ],
+
+  "Redis": [
+    "redis"
+  ],
+
+  "Apache Spark": [
+    "apache spark",
+    "spark"
+  ],
+
+  "Apache Airflow": [
+    "apache airflow",
+    "airflow"
+  ],
+
+  "MLflow": [
+    "mlflow"
+  ],
+
+  "DVC": [
+    "dvc",
+    "data version control"
+  ],
+
+  "AWS": [
+    "aws",
+    "amazon web services"
+  ],
+
+  "Microsoft Azure": [
+    "azure",
+    "microsoft azure"
+  ],
+
+  "Google Cloud": [
+    "google cloud",
+    "gcp",
+    "google cloud platform"
+  ],
+
+  "Data Analysis": [
+    "data analysis",
+    "data analytics"
+  ],
+
+  "Data Visualization": [
+    "data visualization",
+    "visualization"
+  ],
+
+  "Feature Engineering": [
+    "feature engineering"
+  ],
+
+  "Model Deployment": [
+    "model deployment",
+    "deployment"
+  ],
+
+  "MLOps": [
+    "mlops",
+    "ml ops"
+  ],
+
+  "CI/CD": [
+    "ci/cd",
+    "continuous integration",
+    "continuous deployment"
+  ],
+
+  "OCR": [
+    "ocr",
+    "optical character recognition"
+  ],
+
+  "Web Scraping": [
+    "web scraping",
+    "scraping"
+  ],
+
+  "BeautifulSoup": [
+    "beautifulsoup",
+    "bs4"
+  ],
+
+  "Selenium": [
+    "selenium"
+  ]
+}
