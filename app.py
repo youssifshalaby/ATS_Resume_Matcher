@@ -9,7 +9,7 @@ from utils.score_engine import analyze_resume
 # Page Configuration
 # -----------------------------
 st.image(
-    "assets/banner2.png",
+    "assets/UI/banner2.png",
     width="stretch"
 )
 st.set_page_config(
@@ -25,7 +25,7 @@ st.write("Upload a Resume and compare it with a Job Description.")
 with st.sidebar:
 
     st.image(
-        "assets/cv.png"
+        "assets/UI/cv.png"
     )
 
     st.title(
