@@ -4,7 +4,6 @@ os.environ["STREAMLIT_SERVER_FILE_WATCHER_TYPE"] = "none"
 import streamlit as st
 from utils.pdf_loader import extract_text_from_pdf
 from utils.score_engine import analyze_resume
-from PIL import Image
 
 # -----------------------------
 # Page Configuration
@@ -35,10 +34,19 @@ with st.sidebar:
 
     st.write(
         """
-        AI-powered resume evaluation
-        using NLP and embeddings.
+        ✅ PDF Upload
+
+        ✅ Semantic Matching
+
+        ✅ Skill Extraction
+
+        ✅ Missing Skills
+
+        ✅ ATS Score
         """
     )
+    st.divider()
+    st.info("Built with Python, Streamlit, spaCy and Sentence Transformers.")
 
 # -----------------------------
 # User Inputs
@@ -53,11 +61,25 @@ job_description = st.text_area(
     height=250
 )
 
+col1, col2 = st.columns(2)
+
+analyze = col1.button(
+    "🚀 Analyze Resume",
+    use_container_width=True
+)
+
+reset = col2.button(
+    "🔄 Reset",
+    use_container_width=True
+)
 
 # -----------------------------
 # Analyze Button
 # -----------------------------
-if st.button("Analyze Resume"):
+if reset:
+    st.rerun()
+
+if analyze:
 
     if resume_file is None:
         st.warning("Please upload a resume.")
@@ -211,3 +233,9 @@ if st.button("Analyze Resume"):
         st.success(
             f"✓ {section}"
         )
+
+    st.divider()
+
+    st.caption(
+        "© 2026 Youssef Shalaby | AI Resume Matcher | NLP Project"
+    )
