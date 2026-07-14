@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![NLP](https://img.shields.io/badge/NLP-spaCy-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 # 🤖 AI Resume Matcher (ATS)
 
 > An AI-powered Applicant Tracking System (ATS) that analyzes resumes against job descriptions using **Natural Language Processing (NLP)**, **Semantic Embeddings**, and **Skill Matching**.
