@@ -1,116 +1,112 @@
 # 🤖 AI Resume Matcher (ATS)
 
-An AI-powered Applicant Tracking System (ATS) that analyzes resumes against job descriptions using Natural Language Processing (NLP), semantic embeddings, and skill matching.
+> An AI-powered Applicant Tracking System (ATS) that analyzes resumes against job descriptions using **Natural Language Processing (NLP)**, **Semantic Embeddings**, and **Skill Matching**.
 
-The system extracts information from resumes, compares them with job requirements, calculates a match score, and identifies missing skills.
-
----
-
-## 🚀 Features
-
-* 📄 Upload Resume PDF
-* 📝 Add Job Description
-* 🔍 Extract resume text automatically
-* 🧠 Semantic similarity using Sentence Transformers
-* 🛠️ Skill matching using NLP techniques
-* ❌ Detect missing skills
-* ✅ Show matched skills
-* 📊 Calculate ATS compatibility score
-* 📈 Resume structure analysis
-* 🎨 Interactive Streamlit interface
+The application evaluates how well a resume matches a job description by combining **semantic similarity** and **technical skill matching**, then generates an ATS compatibility score along with actionable recommendations.
 
 ---
 
-## 🧠 How It Works
+# ✨ Demo
 
-### 1. Resume Processing
+> 🚧 Live Demo (Coming Soon)
 
-The uploaded PDF is converted into text using PDF extraction techniques.
+---
 
-```
-PDF Resume
-     |
-     ↓
-Text Extraction
+# 📸 Screenshots
+
+## 🏠 Home Page
+
+![Home](assets/screenshots/home.png)
+
+---
+
+## 📊 ATS Analysis Result
+
+![Results](assets/screenshots/result.png)
+
+---
+
+## 🧠 Resume Skills Detection
+
+![Skills](assets/screenshots/skills.png)
+
+---
+
+# 🚀 Features
+
+### 📄 Resume Processing
+
+- Upload Resume (PDF)
+- Automatic PDF text extraction
+- Resume structure analysis
+
+### 🧠 Semantic Matching
+
+- Sentence Embeddings
+- Cosine Similarity
+- Understands contextual meaning instead of keyword matching
+
+### 🛠 Skill Matching
+
+- Automatic technical skill extraction
+- Matched skills detection
+- Missing skills detection
+- Resume vs Job Description comparison
+
+### 📊 ATS Evaluation
+
+- Overall ATS Score
+- Semantic Similarity Score
+- Skill Matching Score
+
+### 💡 Smart Recommendations
+
+- Resume improvement suggestions
+- Missing technologies detection
+- Better ATS compatibility feedback
+
+---
+
+# 🧠 System Architecture
+
+```text
+                  Resume PDF
+                       │
+                       ▼
+              PDF Text Extraction
+                       │
+                       ▼
+              NLP Preprocessing
+                       │
+          ┌────────────┴────────────┐
+          ▼                         ▼
+ Resume Skill Extraction     Job Skill Extraction
+          │                         │
+          └────────────┬────────────┘
+                       ▼
+               Skill Comparison
+                       │
+                       ▼
+          Sentence Embedding Model
+                       │
+                       ▼
+             Semantic Similarity
+                       │
+                       ▼
+             ATS Score Calculation
+                       │
+                       ▼
+             Resume Recommendations
 ```
 
 ---
 
-### 2. Skill Extraction
+# ⚙️ ATS Scoring Formula
 
-The system detects technical skills from:
+The final score is computed using a weighted combination of semantic similarity and skill matching.
 
-* Resume
-* Job Description
-
-Example:
-
-Resume:
-
-```
-Python
-Machine Learning
-SQL
-TensorFlow
-```
-
-Job Description:
-
-```
-Python
-Deep Learning
-SQL
-Docker
-```
-
-Result:
-
-Matched:
-
-```
-Python
-SQL
-```
-
-Missing:
-
-```
-Deep Learning
-Docker
-```
-
----
-
-### 3. Semantic Matching
-
-The project uses Sentence Transformers to understand the meaning of text.
-
-Instead of only matching keywords:
-
-Example:
-
-Resume:
-
-```
-Built machine learning models for prediction tasks
-```
-
-Job:
-
-```
-Experience developing ML predictive systems
-```
-
-The model understands that they have similar meanings.
-
----
-
-### 4. ATS Score Calculation
-
-Final score:
-
-```
-Final Score =
+```text
+Final ATS Score =
 ( Semantic Similarity × 70% )
 +
 ( Skill Match × 30% )
@@ -118,56 +114,98 @@ Final Score =
 
 ---
 
-## 🛠️ Technologies
+# 🛠️ Tech Stack
 
-### Programming
+## Programming Language
 
-* Python
+- Python
 
-### NLP
+## Natural Language Processing
 
-* Sentence Transformers
-* spaCy
-* Regex
-* Embeddings
+- spaCy
+- Sentence Transformers
+- Regex
+- Embeddings
 
-### Machine Learning
+## Machine Learning
 
-* Scikit-learn
+- Scikit-learn
+- Cosine Similarity
 
-### Deployment/UI
+## PDF Processing
 
-* Streamlit
+- pdfplumber
 
-### Data Processing
+## UI
 
-* Pandas
+- Streamlit
+
+## Data Processing
+
+- Pandas
+- NumPy
 
 ---
 
-## ⚙️ Installation
+# 📂 Project Structure
 
-Clone repository:
-
-```bash
-git clone https://github.com/yourusername/ATS_Resume_Matcher.git
+```text
+ATS_Resume_Matcher/
+│
+├── assets/
+│   ├── UI/
+│   └── screenshots/
+│
+├── utils/
+│   ├── embedding.py
+│   ├── matcher.py
+│   ├── pdf_loader.py
+│   ├── score_engine.py
+│   ├── recommendation.py
+│   └── ...
+│
+├── app.py
+├── requirements.txt
+└── README.md
 ```
 
-Create virtual environment:
+---
+
+# 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/youssifshalaby/ATS_Resume_Matcher.git
+```
+
+Move into the project
+
+```bash
+cd ATS_Resume_Matcher
+```
+
+Create a virtual environment
 
 ```bash
 python -m venv .venv
 ```
 
-Activate:
+Activate the environment
 
-Windows:
+### Windows
 
 ```bash
 .venv\Scripts\activate
 ```
 
-Install requirements:
+### Linux / macOS
+
+```bash
+source .venv/bin/activate
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -175,7 +213,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run Application
+# ▶️ Run the Application
 
 ```bash
 streamlit run app.py
@@ -183,35 +221,67 @@ streamlit run app.py
 
 ---
 
-## 📸 Application Preview
+# 📊 Current Capabilities
 
-Add screenshots here:
+✔ Resume PDF Upload
 
-```
-![ATS Interface](assets/screenshot.png)
-```
+✔ PDF Text Extraction
 
----
+✔ Resume Analysis
 
-## 🔮 Future Improvements
+✔ Semantic Similarity
 
-* Advanced skill ontology
-* Skill synonym matching
-* Resume ranking system
-* LLM-based improvement suggestions
-* Job recommendation system
-* Explainable ATS feedback
+✔ Skill Extraction
 
----
+✔ Matched Skills
 
-## 👨‍💻 Author
+✔ Missing Skills
 
-Youssef Ayman
+✔ ATS Compatibility Score
 
-AI Engineer | Data Scientist | Machine Learning Engineer
+✔ Resume Recommendations
+
+✔ Resume Statistics
 
 ---
 
-## ⭐ Project Goal
+# 🔮 Roadmap (Version 2)
 
-Build a practical NLP application that demonstrates how AI can assist recruiters and candidates in improving resume-job compatibility.
+- [ ] DOCX Resume Support
+- [ ] Experience Extraction
+- [ ] Education Extraction
+- [ ] Project Detection
+- [ ] Soft Skills Detection
+- [ ] Skill Synonym Matching
+- [ ] Resume Ranking
+- [ ] AI-powered Resume Feedback (LLMs)
+- [ ] Cover Letter Generator
+- [ ] Multi-language Support
+
+---
+
+# 👨‍💻 Author
+
+**Youssef Ayman Shalaby**
+
+AI Engineer | Machine Learning Engineer | Data Scientist
+
+📧 Email: youssifshalabe@gmail.com
+
+💼 LinkedIn: https://linkedin.com/in/youssifshalaby
+
+💻 GitHub: https://github.com/youssifshalaby
+
+---
+
+# ⭐ Support
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
+
+It motivates me to continue building more AI and NLP projects.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
