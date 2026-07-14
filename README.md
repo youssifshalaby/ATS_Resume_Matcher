@@ -16,7 +16,7 @@ The application evaluates how well a resume matches a job description by combini
 
 ## 🏠 Home Page
 
-![Home](youssifshalaby/ATS_Resume_Matcher/blob/main/assets/screanshots/home.png)
+![Home](assets/screanshots/home.png)
 
 ---
 
