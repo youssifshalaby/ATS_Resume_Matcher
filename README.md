@@ -16,7 +16,7 @@ The application evaluates how well a resume matches a job description by combini
 
 ## 🏠 Home Page
 
-![Home](assets/screanshots/home.png)
+![Home](assets/screenshots/home.png)
 
 ---
 
